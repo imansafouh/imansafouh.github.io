@@ -1,0 +1,158 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(BG_1.png);
+  background-size: cover;
+  flex-direction: column;  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E0E1E1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+ul.navcontain {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #E0E1E1;
+  position: fixed; /* Fix the navbar to the top */
+  top: 0;
+  width: 100%; /* Span the full width */
+  height: 50px; /* Adjust height as needed */
+  display: flex; /* Allow for horizontal layout of logo and other elements */
+  align-items: center; /* Align content vertically within the navbar */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0) inset, 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style the navbar image (img inside ul.navcontain) */
+ul.navcontain img {
+  height: 100%; /* Adjust image height to fit the navbar */
+  width: auto; /* Maintain image aspect ratio */
+  margin-left: 30px;
+}
+
+.container {
+  background-color: #EEEDED;
+  border-radius: 10px;
+  border: 3px solid #CDCCCC;
+  padding: 20px;
+  text-align: center;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 20px;
+  display: flexbox;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 16px; 
+  color: rgba(23,28,40,0.8);
+  border-bottom: 1px solid rgba(112, 112, 112, 0.267);
+  padding-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#warning {
+  color: #d40000;
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px; /* Add some bottom margin to create space between form groups */
+  margin-right: 50px;
+}
+
+.form-group:nth-child(3) {
+  flex-direction: column; /* Set the third form group to stack vertically */
+}
+
+@media screen and (max-width: 768px) {
+  .form-group {
+    flex-direction: column; /* Set all form groups to stack vertically on smaller screens */
+  }
+}
+
+label {
+  margin-bottom: 5px;
+  display: flex;
+  color: #f18913;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 10px;
+  border: 2px solid #CDCCCC;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  background: rgb(24,124,70);
+  background: linear-gradient(110deg, rgba(24,124,70,1) 13%, rgba(65,167,77,1) 100%);
+  color: #fff;
+  text-shadow: 15px black;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: #ddd;
+  font-size: 11px;
+  font-family: serif;
+  font-weight: bold;
+  background: #00603e;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
